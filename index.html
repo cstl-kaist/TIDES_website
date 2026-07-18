@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TIDES — a longitudinal bilingual dataset for modeling multi-party social dynamics."
+    />
+    <title>TIDES — Longitudinal Multi-Party Dialogue</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top"><span>🌊</span> TIDES</a>
+      <nav>
+        <a href="#motivation">Motivation</a><a href="#dataset">Dataset</a
+        ><a href="#explore">Explorer</a><a href="#cite">Citation</a>
+      </nav>
+      <a
+        class="nav-link"
+        href="https://huggingface.co/datasets/hclee99/TIDES"
+        target="_blank"
+        rel="noreferrer"
+        >Dataset ↗</a
+      >
+    </header>
+
+    <main id="top">
+      <section class="hero page-width">
+        <div class="hero-copy">
+          <div class="venue">COLM 2026 · Dataset</div>
+          <h1>
+            <span>🌊 TIDES</span><br />A Longitudinal Bilingual Dataset for
+            Modeling Multi-Party Social Dynamics
+          </h1>
+          <div class="authors">
+            <span
+              ><a href="https://heechanlee.com" target="_blank" rel="noreferrer"
+                >Heechan Lee</a
+              ><sup>*,1</sup></span
+            >
+            <span>Jeonggyu Kang<sup>*,1</sup></span>
+            <span
+              ><a
+                href="https://junhomyung.github.io/"
+                target="_blank"
+                rel="noreferrer"
+                >Junho Myung</a
+              ><sup>1</sup></span
+            >
+            <span
+              ><a
+                href="https://www.jaywoong.me/"
+                target="_blank"
+                rel="noreferrer"
+                >Jaywoong Jeong</a
+              ><sup>1</sup></span
+            >
+            <span
+              ><a href="https://juhokim.com/" target="_blank" rel="noreferrer"
+                >Juho Kim</a
+              ><sup>1,2</sup></span
+            >
+            <span
+              ><a
+                href="https://joseph.seering.org/"
+                target="_blank"
+                rel="noreferrer"
+                >Joseph Seering</a
+              ><sup>1</sup></span
+            >
+            <small class="author-affiliations"
+              ><sup>1</sup> KAIST &nbsp;·&nbsp; <sup>2</sup> SkillBench</small
+            >
+            <small><sup>*</sup> Equal contribution</small>
+          </div>
+          <p class="summary">
+            We followed 12 student teams over one semester to capture how
+            real-world collaboration and social dynamics develop over time.
+          </p>
+          <div class="keywords">
+            <span>Longitudinal</span><span>In-the-wild</span
+            ><span>Multi-party</span><span>Collaborative</span>
+          </div>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://huggingface.co/datasets/hclee99/TIDES"
+              target="_blank"
+              rel="noreferrer"
+              >🤗 Dataset</a
+            >
+            <span class="button muted">arXiv · soon</span
+            ><span class="button muted">OpenReview · soon</span>
+          </div>
+        </div>
+        <div
+          class="hero-figure"
+          aria-label="Illustration of longitudinal team conversations"
+        >
+          <div class="figure-label">TEAM DYNAMICS OVER TIME</div>
+          <svg viewBox="0 0 540 330" role="img">
+            <g class="grid">
+              <path
+                d="M40 40H510M40 105H510M40 170H510M40 235H510M40 300H510"
+              />
+              <path
+                d="M40 40V300M158 40V300M276 40V300M394 40V300M510 40V300"
+              />
+            </g>
+            <path
+              class="wave a"
+              d="M40 206C85 135 122 135 160 192S233 256 278 170 351 90 395 150 461 222 510 111"
+            />
+            <path
+              class="wave b"
+              d="M40 250C89 220 114 235 160 207S231 122 278 151 350 238 395 209 466 130 510 157"
+            />
+            <g class="dots">
+              <circle cx="40" cy="206" r="6" />
+              <circle cx="160" cy="192" r="6" />
+              <circle cx="278" cy="170" r="6" />
+              <circle cx="395" cy="150" r="6" />
+              <circle cx="510" cy="111" r="6" />
+            </g>
+            <text x="40" y="322">FORMING</text>
+            <text x="255" y="322">NORMING</text>
+            <text x="450" y="322">PERFORMING</text>
+          </svg>
+          <p>
+            Utterances, emergent roles, and team development stages are linked
+            across each team’s semester.
+          </p>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div class="page-width metric-grid">
+          <div><strong>12</strong><span>teams</span></div>
+          <div><strong>88</strong><span>meetings</span></div>
+          <div><strong>104</strong><span>transcripts</span></div>
+          <div><strong>75,971</strong><span>utterances</span></div>
+          <div><strong>7 KR / 5 EN</strong><span>teams by language</span></div>
+        </div>
+      </section>
+
+      <section id="motivation" class="section page-width">
+        <div class="section-title">
+          <span>01</span>
+          <div>
+            <h2>Motivation</h2>
+            <p>Why another multi-party dialogue dataset?</p>
+          </div>
+        </div>
+        <div class="motivation-grid">
+          <div class="lead">
+            Models have difficulty tracking subtle, changing social dynamics in
+            multi-party conversation.
+          </div>
+          <div class="body-copy">
+            <p>
+              A high-quality dataset of group conversations is necessary for
+              training and evaluating group conversation ability, but existing
+              datasets fall short in three ways.
+            </p>
+            <p>
+              TIDES answers each limitation directly: authentic in-the-wild
+              recordings, a full semester of longitudinal coverage, and roles
+              that emerge from behavior.
+            </p>
+          </div>
+        </div>
+        <div class="comparison">
+          <article>
+            <div class="limit">
+              <span>Limitation 01</span>
+              <h3>Scripted or synthesized</h3>
+              <p>
+                TV/movie scripts, lab observation, or LLM-generated dialog —
+                lacking the authenticity of real conversation.
+              </p>
+            </div>
+            <div class="resolve" aria-hidden="true">
+              <b><span>🌊</span></b>
+            </div>
+            <div class="answer">
+              <h3>Authentic</h3>
+              <p>
+                In-the-wild recordings of real student teams working on actual
+                course projects.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="limit">
+              <span>Limitation 02</span>
+              <h3>Short-term conversations</h3>
+              <p>
+                Usually a single session under one hour — long-term evolving
+                social dynamics stay invisible.
+              </p>
+            </div>
+            <div class="resolve" aria-hidden="true">
+              <b><span>🌊</span></b>
+            </div>
+            <div class="answer">
+              <h3>Longitudinal</h3>
+              <p>
+                The same 12 teams followed across a full semester of meetings
+                and chats.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="limit">
+              <span>Limitation 03</span>
+              <h3>Fixed, assigned roles</h3>
+              <p>
+                Professor–student, parent–child — emergent roles like
+                coordinator or critic never surface.
+              </p>
+            </div>
+            <div class="resolve" aria-hidden="true">
+              <b><span>🌊</span></b>
+            </div>
+            <div class="answer">
+              <h3>Emergent roles</h3>
+              <p>
+                Roles grounded in observed behavior: dominance, sociability, and
+                task orientation.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="dataset" class="section section-alt">
+        <div class="page-width">
+          <div class="section-title">
+            <span>02</span>
+            <div>
+              <h2>Dataset</h2>
+              <p>Three annotation layers for studying social dynamics.</p>
+            </div>
+          </div>
+          <div class="dataset-overview">
+            <div>
+              <h3>Real teams, followed over time.</h3>
+              <p>
+                We tracked 12 university student teams as they worked on
+                authentic course projects over one semester. TIDES combines
+                synchronous meetings and asynchronous communication with
+                repeated team surveys.
+              </p>
+            </div>
+            <div class="modalities">
+              <article>
+                <b>75,971</b><span>Utterances</span>
+                <p>
+                  Time-aligned, speaker-anonymized transcripts with English text
+                  and retained Korean source text.
+                </p>
+              </article>
+              <article>
+                <b>Surveys</b><span>Satisfaction & roles</span>
+                <p>
+                  Meeting satisfaction plus dominance, sociability, and
+                  task-orientation ratings.
+                </p>
+              </article>
+              <article>
+                <b>11 teams</b><span>Chat logs</span>
+                <p>
+                  Asynchronous team messages connected to the same semester-long
+                  collaborations.
+                </p>
+              </article>
+              <article>
+                <b>KR + EN</b><span>Bilingual teams</span>
+                <p>
+                  Seven Korean-source and five English-source teams across
+                  varied project settings.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="subsection-heading">
+            <h3>Annotation layers</h3>
+            <p>
+              Each layer is grounded in an established theory of teamwork and
+              group development.
+            </p>
+          </div>
+          <div class="annotation-grid">
+            <article>
+              <div class="icon people"><i></i><i></i><i></i></div>
+              <h3>Emergent role</h3>
+              <p>
+                Participant roles based on dominance, sociability, and task
+                orientation.
+              </p>
+              <small>TRIAD model · Driskell et al., 2017</small
+              ><em>13 role labels</em>
+            </article>
+            <article>
+              <div class="icon dialog">“ ”</div>
+              <h3>Interaction type</h3>
+              <p>
+                Utterance-level labels describing how each turn contributes to
+                teamwork.
+              </p>
+              <small>Modified act4teams-SHORT · Klünder et al., 2020</small
+              ><em>15 interaction labels</em>
+            </article>
+            <article>
+              <div class="icon stages"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Development stage</h3>
+              <p>
+                Meeting-level labels locating a team along its longitudinal
+                development.
+              </p>
+              <small>Group development · Tuckman, 1965</small
+              ><em>5 development stages</em>
+            </article>
+          </div>
+          <div class="language-row">
+            <strong>Bilingual data</strong>
+            <p>
+              All transcripts provide English text. Korean-source teams
+              additionally retain the original Korean utterances when available.
+            </p>
+            <span
+              >7 Korean-source teams &nbsp;·&nbsp; 5 English-source teams</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="explore" class="section page-width">
+        <div class="section-title">
+          <span>03</span>
+          <div>
+            <h2>Dataset examples</h2>
+            <p>
+              Explore three excerpts from Korean- and English-source team
+              meetings.
+            </p>
+          </div>
+        </div>
+        <div class="explorer">
+          <div class="case-tabs">
+            <button class="active" data-case="team2">
+              <span>KR</span><b>Team 2 · Nov 18</b
+              ><small>Korean-source meeting</small></button
+            ><button data-case="team4">
+              <span>EN</span><b>Team 4 · Oct 16</b
+              ><small>English-source meeting</small>
+            </button>
+            <button data-case="team5">
+              <span>EN</span><b>Team 5 · Dec 02</b
+              ><small>English-source meeting</small>
+            </button>
+          </div>
+          <div id="meetingOverview" class="meeting-overview"></div>
+          <div class="table-head">
+            <span>Speaker / time</span><span>Utterance</span
+            ><span>Interaction type</span>
+          </div>
+          <div id="transcript"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            No utterances match this view.
+          </div>
+          <div class="table-foot">
+            <span id="sourceNote"
+              >English translations with Korean source text</span
+            ><span id="rowCount">9 utterances</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="cite" class="section page-width">
+        <div class="section-title">
+          <span>04</span>
+          <div>
+            <h2>Citation</h2>
+            <p>BibTeX will be updated after publication.</p>
+          </div>
+        </div>
+        <div class="code-block">
+          <button id="copyCitation">Copy</button>
+          <pre><code>@inproceedings{tides2026,
+  title  = {TIDES: A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics},
+  author = {Heechan Lee and Jeonggyu Kang and Junho Myung and Jaywoong Jeong and Juho Kim and Joseph Seering},
+  year   = {2026},
+  note   = {Citation forthcoming}
+}</code></pre>
+        </div>
+      </section>
+
+      <section
+        class="affiliations"
+        aria-label="Affiliated institutions and research labs"
+      >
+        <div class="page-width affiliation-row">
+          <a
+            href="https://kaist.ac.kr"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit KAIST"
+            ><img src="images/kaist_logo.png" alt="KAIST"
+          /></a>
+          <a
+            href="https://cstlab.org"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit CSTL"
+            ><img src="images/cstl_logo.png" alt="CSTL"
+          /></a>
+          <a
+            href="https://kixlab.org"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit KIXLAB"
+            ><img src="images/kixlab_logo.png" alt="KIXLAB"
+          /></a>
+          <a
+            href="https://skillbench.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit SkillBench"
+            ><img src="images/skillbench_logo.svg" alt="SkillBench"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="page-width">
+        <a class="brand" href="#top"><span>🌊</span> TIDES</a>
+        <p>A longitudinal bilingual dataset for multi-party social dynamics.</p>
+        <a
+          href="https://huggingface.co/datasets/hclee99/TIDES"
+          target="_blank"
+          rel="noreferrer"
+          >Hugging Face ↗</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
