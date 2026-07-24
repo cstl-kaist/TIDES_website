@@ -1,0 +1,1881 @@
+{
+  "generated_at": "2026-07-24T16:13:03",
+  "source": "/home/prj_c2/TIDES_final_July",
+  "overview": {
+    "n_teams": 12,
+    "n_meeting_transcript_files": 104,
+    "n_dated_meetings_in_metadata": 88,
+    "n_unique_dated_meetings_from_filenames": 88,
+    "n_utterances": 75971,
+    "n_role_rows": 352,
+    "n_segments_with_korean_text": 55786,
+    "n_segments_with_qwen_utterance_type": 70266,
+    "missing_utterance_type": 0,
+    "missing_annotation_source": 0
+  },
+  "meetings_and_files_by_team": {
+    "Team_1": {
+      "transcript_files": 5,
+      "metadata_meetings": 4,
+      "utterances": 3861,
+      "language_group": "ko"
+    },
+    "Team_2": {
+      "transcript_files": 15,
+      "metadata_meetings": 13,
+      "utterances": 11630,
+      "language_group": "ko"
+    },
+    "Team_3": {
+      "transcript_files": 10,
+      "metadata_meetings": 8,
+      "utterances": 14058,
+      "language_group": "ko"
+    },
+    "Team_4": {
+      "transcript_files": 5,
+      "metadata_meetings": 4,
+      "utterances": 2788,
+      "language_group": "en"
+    },
+    "Team_5": {
+      "transcript_files": 12,
+      "metadata_meetings": 10,
+      "utterances": 6168,
+      "language_group": "en"
+    },
+    "Team_6": {
+      "transcript_files": 7,
+      "metadata_meetings": 6,
+      "utterances": 3448,
+      "language_group": "ko"
+    },
+    "Team_7": {
+      "transcript_files": 5,
+      "metadata_meetings": 5,
+      "utterances": 6594,
+      "language_group": "ko"
+    },
+    "Team_8": {
+      "transcript_files": 5,
+      "metadata_meetings": 5,
+      "utterances": 3377,
+      "language_group": "en"
+    },
+    "Team_9": {
+      "transcript_files": 8,
+      "metadata_meetings": 7,
+      "utterances": 11713,
+      "language_group": "ko"
+    },
+    "Team_10": {
+      "transcript_files": 8,
+      "metadata_meetings": 7,
+      "utterances": 4482,
+      "language_group": "ko"
+    },
+    "Team_11": {
+      "transcript_files": 9,
+      "metadata_meetings": 6,
+      "utterances": 3852,
+      "language_group": "en"
+    },
+    "Team_12": {
+      "transcript_files": 15,
+      "metadata_meetings": 13,
+      "utterances": 4000,
+      "language_group": "en"
+    }
+  },
+  "utterances_by_team": {
+    "Team_1": {
+      "count": 3861,
+      "pct_of_total": 5.08
+    },
+    "Team_2": {
+      "count": 11630,
+      "pct_of_total": 15.31
+    },
+    "Team_3": {
+      "count": 14058,
+      "pct_of_total": 18.5
+    },
+    "Team_4": {
+      "count": 2788,
+      "pct_of_total": 3.67
+    },
+    "Team_5": {
+      "count": 6168,
+      "pct_of_total": 8.12
+    },
+    "Team_6": {
+      "count": 3448,
+      "pct_of_total": 4.54
+    },
+    "Team_7": {
+      "count": 6594,
+      "pct_of_total": 8.68
+    },
+    "Team_8": {
+      "count": 3377,
+      "pct_of_total": 4.45
+    },
+    "Team_9": {
+      "count": 11713,
+      "pct_of_total": 15.42
+    },
+    "Team_10": {
+      "count": 4482,
+      "pct_of_total": 5.9
+    },
+    "Team_11": {
+      "count": 3852,
+      "pct_of_total": 5.07
+    },
+    "Team_12": {
+      "count": 4000,
+      "pct_of_total": 5.27
+    }
+  },
+  "golden_dataset": {
+    "definition": "annotation_source == 'human'",
+    "n_golden": 5705,
+    "n_gemma": 70266,
+    "n_other_sources": {},
+    "golden_pct_of_total": 7.51,
+    "gemma_pct_of_total": 92.49,
+    "by_team": {
+      "Team_1": {
+        "human": 0,
+        "gemma": 3861,
+        "human_pct_of_team": 0.0,
+        "human_pct_of_all_golden": 0.0
+      },
+      "Team_2": {
+        "human": 0,
+        "gemma": 11630,
+        "human_pct_of_team": 0.0,
+        "human_pct_of_all_golden": 0.0
+      },
+      "Team_3": {
+        "human": 338,
+        "gemma": 13720,
+        "human_pct_of_team": 2.4,
+        "human_pct_of_all_golden": 5.92
+      },
+      "Team_4": {
+        "human": 449,
+        "gemma": 2339,
+        "human_pct_of_team": 16.1,
+        "human_pct_of_all_golden": 7.87
+      },
+      "Team_5": {
+        "human": 338,
+        "gemma": 5830,
+        "human_pct_of_team": 5.48,
+        "human_pct_of_all_golden": 5.92
+      },
+      "Team_6": {
+        "human": 0,
+        "gemma": 3448,
+        "human_pct_of_team": 0.0,
+        "human_pct_of_all_golden": 0.0
+      },
+      "Team_7": {
+        "human": 1821,
+        "gemma": 4773,
+        "human_pct_of_team": 27.62,
+        "human_pct_of_all_golden": 31.92
+      },
+      "Team_8": {
+        "human": 536,
+        "gemma": 2841,
+        "human_pct_of_team": 15.87,
+        "human_pct_of_all_golden": 9.4
+      },
+      "Team_9": {
+        "human": 2173,
+        "gemma": 9540,
+        "human_pct_of_team": 18.55,
+        "human_pct_of_all_golden": 38.09
+      },
+      "Team_10": {
+        "human": 0,
+        "gemma": 4482,
+        "human_pct_of_team": 0.0,
+        "human_pct_of_all_golden": 0.0
+      },
+      "Team_11": {
+        "human": 50,
+        "gemma": 3802,
+        "human_pct_of_team": 1.3,
+        "human_pct_of_all_golden": 0.88
+      },
+      "Team_12": {
+        "human": 0,
+        "gemma": 4000,
+        "human_pct_of_team": 0.0,
+        "human_pct_of_all_golden": 0.0
+      }
+    }
+  },
+  "utterance_type": {
+    "overall": {
+      "Giving Information": {
+        "count": 26810,
+        "pct": 35.29
+      },
+      "Active listening": {
+        "count": 9946,
+        "pct": 13.09
+      },
+      "Linking Solutions": {
+        "count": 9260,
+        "pct": 12.19
+      },
+      "Naming Solutions": {
+        "count": 4917,
+        "pct": 6.47
+      },
+      "Other / Neutral": {
+        "count": 4703,
+        "pct": 6.19
+      },
+      "Structuring": {
+        "count": 4643,
+        "pct": 6.11
+      },
+      "Proactivity": {
+        "count": 3912,
+        "pct": 5.15
+      },
+      "Naming Problems": {
+        "count": 3157,
+        "pct": 4.16
+      },
+      "Social / Humor": {
+        "count": 2510,
+        "pct": 3.3
+      },
+      "Linking Problems": {
+        "count": 2233,
+        "pct": 2.94
+      },
+      "Cooperation": {
+        "count": 1812,
+        "pct": 2.39
+      },
+      "Knowledge Transfer": {
+        "count": 878,
+        "pct": 1.16
+      },
+      "Task/Process Negative": {
+        "count": 642,
+        "pct": 0.85
+      },
+      "Social Negative": {
+        "count": 465,
+        "pct": 0.61
+      },
+      "Linking & Connecting": {
+        "count": 83,
+        "pct": 0.11
+      }
+    },
+    "by_team": {
+      "Team_1": {
+        "Giving Information": {
+          "count": 1384,
+          "pct_of_team": 35.85
+        },
+        "Active listening": {
+          "count": 597,
+          "pct_of_team": 15.46
+        },
+        "Linking Solutions": {
+          "count": 391,
+          "pct_of_team": 10.13
+        },
+        "Proactivity": {
+          "count": 291,
+          "pct_of_team": 7.54
+        },
+        "Naming Solutions": {
+          "count": 272,
+          "pct_of_team": 7.04
+        },
+        "Structuring": {
+          "count": 269,
+          "pct_of_team": 6.97
+        },
+        "Other / Neutral": {
+          "count": 204,
+          "pct_of_team": 5.28
+        },
+        "Cooperation": {
+          "count": 137,
+          "pct_of_team": 3.55
+        },
+        "Naming Problems": {
+          "count": 131,
+          "pct_of_team": 3.39
+        },
+        "Social / Humor": {
+          "count": 105,
+          "pct_of_team": 2.72
+        },
+        "Linking Problems": {
+          "count": 55,
+          "pct_of_team": 1.42
+        },
+        "Task/Process Negative": {
+          "count": 13,
+          "pct_of_team": 0.34
+        },
+        "Knowledge Transfer": {
+          "count": 7,
+          "pct_of_team": 0.18
+        },
+        "Social Negative": {
+          "count": 4,
+          "pct_of_team": 0.1
+        },
+        "Linking & Connecting": {
+          "count": 1,
+          "pct_of_team": 0.03
+        }
+      },
+      "Team_2": {
+        "Giving Information": {
+          "count": 4162,
+          "pct_of_team": 35.79
+        },
+        "Linking Solutions": {
+          "count": 1725,
+          "pct_of_team": 14.83
+        },
+        "Active listening": {
+          "count": 1178,
+          "pct_of_team": 10.13
+        },
+        "Other / Neutral": {
+          "count": 752,
+          "pct_of_team": 6.47
+        },
+        "Structuring": {
+          "count": 723,
+          "pct_of_team": 6.22
+        },
+        "Naming Solutions": {
+          "count": 681,
+          "pct_of_team": 5.86
+        },
+        "Proactivity": {
+          "count": 607,
+          "pct_of_team": 5.22
+        },
+        "Naming Problems": {
+          "count": 555,
+          "pct_of_team": 4.77
+        },
+        "Linking Problems": {
+          "count": 454,
+          "pct_of_team": 3.9
+        },
+        "Social / Humor": {
+          "count": 276,
+          "pct_of_team": 2.37
+        },
+        "Knowledge Transfer": {
+          "count": 205,
+          "pct_of_team": 1.76
+        },
+        "Cooperation": {
+          "count": 160,
+          "pct_of_team": 1.38
+        },
+        "Task/Process Negative": {
+          "count": 97,
+          "pct_of_team": 0.83
+        },
+        "Social Negative": {
+          "count": 47,
+          "pct_of_team": 0.4
+        },
+        "Linking & Connecting": {
+          "count": 8,
+          "pct_of_team": 0.07
+        }
+      },
+      "Team_3": {
+        "Giving Information": {
+          "count": 4943,
+          "pct_of_team": 35.16
+        },
+        "Active listening": {
+          "count": 1816,
+          "pct_of_team": 12.92
+        },
+        "Linking Solutions": {
+          "count": 1651,
+          "pct_of_team": 11.74
+        },
+        "Other / Neutral": {
+          "count": 1003,
+          "pct_of_team": 7.13
+        },
+        "Structuring": {
+          "count": 889,
+          "pct_of_team": 6.32
+        },
+        "Naming Solutions": {
+          "count": 778,
+          "pct_of_team": 5.53
+        },
+        "Social / Humor": {
+          "count": 652,
+          "pct_of_team": 4.64
+        },
+        "Naming Problems": {
+          "count": 609,
+          "pct_of_team": 4.33
+        },
+        "Proactivity": {
+          "count": 571,
+          "pct_of_team": 4.06
+        },
+        "Linking Problems": {
+          "count": 430,
+          "pct_of_team": 3.06
+        },
+        "Cooperation": {
+          "count": 354,
+          "pct_of_team": 2.52
+        },
+        "Task/Process Negative": {
+          "count": 193,
+          "pct_of_team": 1.37
+        },
+        "Social Negative": {
+          "count": 154,
+          "pct_of_team": 1.1
+        },
+        "Knowledge Transfer": {
+          "count": 11,
+          "pct_of_team": 0.08
+        },
+        "Linking & Connecting": {
+          "count": 4,
+          "pct_of_team": 0.03
+        }
+      },
+      "Team_4": {
+        "Giving Information": {
+          "count": 1140,
+          "pct_of_team": 40.89
+        },
+        "Active listening": {
+          "count": 491,
+          "pct_of_team": 17.61
+        },
+        "Linking Solutions": {
+          "count": 249,
+          "pct_of_team": 8.93
+        },
+        "Other / Neutral": {
+          "count": 185,
+          "pct_of_team": 6.64
+        },
+        "Naming Solutions": {
+          "count": 184,
+          "pct_of_team": 6.6
+        },
+        "Structuring": {
+          "count": 138,
+          "pct_of_team": 4.95
+        },
+        "Social / Humor": {
+          "count": 85,
+          "pct_of_team": 3.05
+        },
+        "Proactivity": {
+          "count": 75,
+          "pct_of_team": 2.69
+        },
+        "Naming Problems": {
+          "count": 72,
+          "pct_of_team": 2.58
+        },
+        "Cooperation": {
+          "count": 53,
+          "pct_of_team": 1.9
+        },
+        "Linking Problems": {
+          "count": 48,
+          "pct_of_team": 1.72
+        },
+        "Knowledge Transfer": {
+          "count": 31,
+          "pct_of_team": 1.11
+        },
+        "Social Negative": {
+          "count": 18,
+          "pct_of_team": 0.65
+        },
+        "Task/Process Negative": {
+          "count": 11,
+          "pct_of_team": 0.39
+        },
+        "Linking & Connecting": {
+          "count": 8,
+          "pct_of_team": 0.29
+        }
+      },
+      "Team_5": {
+        "Giving Information": {
+          "count": 2117,
+          "pct_of_team": 34.32
+        },
+        "Active listening": {
+          "count": 937,
+          "pct_of_team": 15.19
+        },
+        "Linking Solutions": {
+          "count": 740,
+          "pct_of_team": 12.0
+        },
+        "Naming Solutions": {
+          "count": 548,
+          "pct_of_team": 8.88
+        },
+        "Proactivity": {
+          "count": 358,
+          "pct_of_team": 5.8
+        },
+        "Other / Neutral": {
+          "count": 337,
+          "pct_of_team": 5.46
+        },
+        "Structuring": {
+          "count": 303,
+          "pct_of_team": 4.91
+        },
+        "Naming Problems": {
+          "count": 293,
+          "pct_of_team": 4.75
+        },
+        "Linking Problems": {
+          "count": 191,
+          "pct_of_team": 3.1
+        },
+        "Cooperation": {
+          "count": 154,
+          "pct_of_team": 2.5
+        },
+        "Social / Humor": {
+          "count": 120,
+          "pct_of_team": 1.95
+        },
+        "Knowledge Transfer": {
+          "count": 40,
+          "pct_of_team": 0.65
+        },
+        "Task/Process Negative": {
+          "count": 18,
+          "pct_of_team": 0.29
+        },
+        "Social Negative": {
+          "count": 9,
+          "pct_of_team": 0.15
+        },
+        "Linking & Connecting": {
+          "count": 3,
+          "pct_of_team": 0.05
+        }
+      },
+      "Team_6": {
+        "Giving Information": {
+          "count": 992,
+          "pct_of_team": 28.77
+        },
+        "Linking Solutions": {
+          "count": 547,
+          "pct_of_team": 15.86
+        },
+        "Active listening": {
+          "count": 524,
+          "pct_of_team": 15.2
+        },
+        "Naming Solutions": {
+          "count": 237,
+          "pct_of_team": 6.87
+        },
+        "Proactivity": {
+          "count": 230,
+          "pct_of_team": 6.67
+        },
+        "Structuring": {
+          "count": 220,
+          "pct_of_team": 6.38
+        },
+        "Cooperation": {
+          "count": 150,
+          "pct_of_team": 4.35
+        },
+        "Other / Neutral": {
+          "count": 137,
+          "pct_of_team": 3.97
+        },
+        "Naming Problems": {
+          "count": 133,
+          "pct_of_team": 3.86
+        },
+        "Linking Problems": {
+          "count": 110,
+          "pct_of_team": 3.19
+        },
+        "Social / Humor": {
+          "count": 97,
+          "pct_of_team": 2.81
+        },
+        "Knowledge Transfer": {
+          "count": 55,
+          "pct_of_team": 1.6
+        },
+        "Task/Process Negative": {
+          "count": 11,
+          "pct_of_team": 0.32
+        },
+        "Linking & Connecting": {
+          "count": 3,
+          "pct_of_team": 0.09
+        },
+        "Social Negative": {
+          "count": 2,
+          "pct_of_team": 0.06
+        }
+      },
+      "Team_7": {
+        "Giving Information": {
+          "count": 2180,
+          "pct_of_team": 33.06
+        },
+        "Active listening": {
+          "count": 985,
+          "pct_of_team": 14.94
+        },
+        "Linking Solutions": {
+          "count": 701,
+          "pct_of_team": 10.63
+        },
+        "Other / Neutral": {
+          "count": 498,
+          "pct_of_team": 7.55
+        },
+        "Structuring": {
+          "count": 480,
+          "pct_of_team": 7.28
+        },
+        "Naming Solutions": {
+          "count": 387,
+          "pct_of_team": 5.87
+        },
+        "Social / Humor": {
+          "count": 313,
+          "pct_of_team": 4.75
+        },
+        "Proactivity": {
+          "count": 292,
+          "pct_of_team": 4.43
+        },
+        "Naming Problems": {
+          "count": 253,
+          "pct_of_team": 3.84
+        },
+        "Cooperation": {
+          "count": 167,
+          "pct_of_team": 2.53
+        },
+        "Linking Problems": {
+          "count": 166,
+          "pct_of_team": 2.52
+        },
+        "Task/Process Negative": {
+          "count": 77,
+          "pct_of_team": 1.17
+        },
+        "Knowledge Transfer": {
+          "count": 58,
+          "pct_of_team": 0.88
+        },
+        "Linking & Connecting": {
+          "count": 19,
+          "pct_of_team": 0.29
+        },
+        "Social Negative": {
+          "count": 18,
+          "pct_of_team": 0.27
+        }
+      },
+      "Team_8": {
+        "Giving Information": {
+          "count": 1365,
+          "pct_of_team": 40.42
+        },
+        "Active listening": {
+          "count": 475,
+          "pct_of_team": 14.07
+        },
+        "Structuring": {
+          "count": 268,
+          "pct_of_team": 7.94
+        },
+        "Linking Solutions": {
+          "count": 230,
+          "pct_of_team": 6.81
+        },
+        "Other / Neutral": {
+          "count": 229,
+          "pct_of_team": 6.78
+        },
+        "Social / Humor": {
+          "count": 163,
+          "pct_of_team": 4.83
+        },
+        "Proactivity": {
+          "count": 159,
+          "pct_of_team": 4.71
+        },
+        "Cooperation": {
+          "count": 101,
+          "pct_of_team": 2.99
+        },
+        "Knowledge Transfer": {
+          "count": 101,
+          "pct_of_team": 2.99
+        },
+        "Naming Solutions": {
+          "count": 91,
+          "pct_of_team": 2.69
+        },
+        "Naming Problems": {
+          "count": 83,
+          "pct_of_team": 2.46
+        },
+        "Linking Problems": {
+          "count": 58,
+          "pct_of_team": 1.72
+        },
+        "Task/Process Negative": {
+          "count": 28,
+          "pct_of_team": 0.83
+        },
+        "Social Negative": {
+          "count": 25,
+          "pct_of_team": 0.74
+        },
+        "Linking & Connecting": {
+          "count": 1,
+          "pct_of_team": 0.03
+        }
+      },
+      "Team_9": {
+        "Giving Information": {
+          "count": 4173,
+          "pct_of_team": 35.63
+        },
+        "Linking Solutions": {
+          "count": 1532,
+          "pct_of_team": 13.08
+        },
+        "Active listening": {
+          "count": 1298,
+          "pct_of_team": 11.08
+        },
+        "Naming Solutions": {
+          "count": 685,
+          "pct_of_team": 5.85
+        },
+        "Other / Neutral": {
+          "count": 665,
+          "pct_of_team": 5.68
+        },
+        "Naming Problems": {
+          "count": 628,
+          "pct_of_team": 5.36
+        },
+        "Linking Problems": {
+          "count": 497,
+          "pct_of_team": 4.24
+        },
+        "Proactivity": {
+          "count": 463,
+          "pct_of_team": 3.95
+        },
+        "Structuring": {
+          "count": 444,
+          "pct_of_team": 3.79
+        },
+        "Social / Humor": {
+          "count": 442,
+          "pct_of_team": 3.77
+        },
+        "Knowledge Transfer": {
+          "count": 305,
+          "pct_of_team": 2.6
+        },
+        "Cooperation": {
+          "count": 251,
+          "pct_of_team": 2.14
+        },
+        "Social Negative": {
+          "count": 156,
+          "pct_of_team": 1.33
+        },
+        "Task/Process Negative": {
+          "count": 145,
+          "pct_of_team": 1.24
+        },
+        "Linking & Connecting": {
+          "count": 29,
+          "pct_of_team": 0.25
+        }
+      },
+      "Team_10": {
+        "Giving Information": {
+          "count": 1482,
+          "pct_of_team": 33.07
+        },
+        "Linking Solutions": {
+          "count": 734,
+          "pct_of_team": 16.38
+        },
+        "Active listening": {
+          "count": 516,
+          "pct_of_team": 11.51
+        },
+        "Naming Solutions": {
+          "count": 448,
+          "pct_of_team": 10.0
+        },
+        "Structuring": {
+          "count": 320,
+          "pct_of_team": 7.14
+        },
+        "Proactivity": {
+          "count": 294,
+          "pct_of_team": 6.56
+        },
+        "Other / Neutral": {
+          "count": 189,
+          "pct_of_team": 4.22
+        },
+        "Naming Problems": {
+          "count": 145,
+          "pct_of_team": 3.24
+        },
+        "Cooperation": {
+          "count": 132,
+          "pct_of_team": 2.95
+        },
+        "Social / Humor": {
+          "count": 81,
+          "pct_of_team": 1.81
+        },
+        "Linking Problems": {
+          "count": 79,
+          "pct_of_team": 1.76
+        },
+        "Knowledge Transfer": {
+          "count": 30,
+          "pct_of_team": 0.67
+        },
+        "Task/Process Negative": {
+          "count": 24,
+          "pct_of_team": 0.54
+        },
+        "Social Negative": {
+          "count": 8,
+          "pct_of_team": 0.18
+        }
+      },
+      "Team_11": {
+        "Giving Information": {
+          "count": 1525,
+          "pct_of_team": 39.59
+        },
+        "Active listening": {
+          "count": 527,
+          "pct_of_team": 13.68
+        },
+        "Linking Solutions": {
+          "count": 341,
+          "pct_of_team": 8.85
+        },
+        "Naming Solutions": {
+          "count": 339,
+          "pct_of_team": 8.8
+        },
+        "Proactivity": {
+          "count": 280,
+          "pct_of_team": 7.27
+        },
+        "Other / Neutral": {
+          "count": 245,
+          "pct_of_team": 6.36
+        },
+        "Structuring": {
+          "count": 175,
+          "pct_of_team": 4.54
+        },
+        "Naming Problems": {
+          "count": 165,
+          "pct_of_team": 4.28
+        },
+        "Social / Humor": {
+          "count": 86,
+          "pct_of_team": 2.23
+        },
+        "Linking Problems": {
+          "count": 68,
+          "pct_of_team": 1.77
+        },
+        "Cooperation": {
+          "count": 67,
+          "pct_of_team": 1.74
+        },
+        "Social Negative": {
+          "count": 14,
+          "pct_of_team": 0.36
+        },
+        "Task/Process Negative": {
+          "count": 12,
+          "pct_of_team": 0.31
+        },
+        "Knowledge Transfer": {
+          "count": 6,
+          "pct_of_team": 0.16
+        },
+        "Linking & Connecting": {
+          "count": 2,
+          "pct_of_team": 0.05
+        }
+      },
+      "Team_12": {
+        "Giving Information": {
+          "count": 1347,
+          "pct_of_team": 33.67
+        },
+        "Active listening": {
+          "count": 602,
+          "pct_of_team": 15.05
+        },
+        "Linking Solutions": {
+          "count": 419,
+          "pct_of_team": 10.47
+        },
+        "Structuring": {
+          "count": 414,
+          "pct_of_team": 10.35
+        },
+        "Proactivity": {
+          "count": 292,
+          "pct_of_team": 7.3
+        },
+        "Naming Solutions": {
+          "count": 267,
+          "pct_of_team": 6.67
+        },
+        "Other / Neutral": {
+          "count": 259,
+          "pct_of_team": 6.47
+        },
+        "Naming Problems": {
+          "count": 90,
+          "pct_of_team": 2.25
+        },
+        "Social / Humor": {
+          "count": 90,
+          "pct_of_team": 2.25
+        },
+        "Cooperation": {
+          "count": 86,
+          "pct_of_team": 2.15
+        },
+        "Linking Problems": {
+          "count": 77,
+          "pct_of_team": 1.93
+        },
+        "Knowledge Transfer": {
+          "count": 29,
+          "pct_of_team": 0.72
+        },
+        "Task/Process Negative": {
+          "count": 13,
+          "pct_of_team": 0.33
+        },
+        "Social Negative": {
+          "count": 10,
+          "pct_of_team": 0.25
+        },
+        "Linking & Connecting": {
+          "count": 5,
+          "pct_of_team": 0.12
+        }
+      }
+    }
+  },
+  "roles": {
+    "n_participant_meeting_rows": 352,
+    "assigned_role_counts": {
+      "Problem Solver": {
+        "count": 62,
+        "pct": 17.61
+      },
+      "Coordinator": {
+        "count": 59,
+        "pct": 16.76
+      },
+      "Critic": {
+        "count": 56,
+        "pct": 15.91
+      },
+      "Negative": {
+        "count": 38,
+        "pct": 10.8
+      },
+      "Task Motivator": {
+        "count": 32,
+        "pct": 9.09
+      },
+      "Team Leader": {
+        "count": 32,
+        "pct": 9.09
+      },
+      "Evaluator": {
+        "count": 16,
+        "pct": 4.55
+      },
+      "Attention Seeker": {
+        "count": 13,
+        "pct": 3.69
+      },
+      "Task Completer": {
+        "count": 11,
+        "pct": 3.12
+      },
+      "Teamwork Support": {
+        "count": 11,
+        "pct": 3.12
+      },
+      "Follower": {
+        "count": 10,
+        "pct": 2.84
+      },
+      "Power Seeker": {
+        "count": 7,
+        "pct": 1.99
+      },
+      "Social": {
+        "count": 5,
+        "pct": 1.42
+      }
+    },
+    "by_team": {
+      "Team_1": {
+        "Negative": 4,
+        "Problem Solver": 3,
+        "Team Leader": 3,
+        "Attention Seeker": 2,
+        "Coordinator": 2,
+        "Task Completer": 2,
+        "Task Motivator": 2,
+        "Critic": 1,
+        "Evaluator": 1
+      },
+      "Team_2": {
+        "Critic": 13,
+        "Problem Solver": 11,
+        "Team Leader": 8,
+        "Coordinator": 6,
+        "Negative": 5,
+        "Evaluator": 2,
+        "Social": 2,
+        "Task Motivator": 2,
+        "Attention Seeker": 1,
+        "Follower": 1,
+        "Teamwork Support": 1
+      },
+      "Team_3": {
+        "Problem Solver": 7,
+        "Attention Seeker": 4,
+        "Coordinator": 4,
+        "Critic": 2,
+        "Task Completer": 2,
+        "Negative": 1,
+        "Power Seeker": 1,
+        "Task Motivator": 1,
+        "Team Leader": 1,
+        "Teamwork Support": 1
+      },
+      "Team_4": {
+        "Critic": 3,
+        "Negative": 2,
+        "Problem Solver": 2,
+        "Task Motivator": 2,
+        "Teamwork Support": 2,
+        "Coordinator": 1,
+        "Evaluator": 1,
+        "Follower": 1,
+        "Power Seeker": 1,
+        "Social": 1
+      },
+      "Team_5": {
+        "Critic": 11,
+        "Problem Solver": 11,
+        "Coordinator": 9,
+        "Negative": 9,
+        "Task Motivator": 4,
+        "Team Leader": 3,
+        "Power Seeker": 1,
+        "Task Completer": 1,
+        "Teamwork Support": 1
+      },
+      "Team_6": {
+        "Evaluator": 9,
+        "Coordinator": 4,
+        "Task Motivator": 4,
+        "Critic": 2,
+        "Problem Solver": 2,
+        "Follower": 1,
+        "Negative": 1,
+        "Power Seeker": 1
+      },
+      "Team_7": {
+        "Task Motivator": 6,
+        "Follower": 2,
+        "Problem Solver": 2,
+        "Attention Seeker": 1,
+        "Critic": 1,
+        "Negative": 1,
+        "Power Seeker": 1
+      },
+      "Team_8": {
+        "Coordinator": 9,
+        "Problem Solver": 4,
+        "Critic": 3,
+        "Negative": 3,
+        "Task Motivator": 3,
+        "Task Completer": 2,
+        "Power Seeker": 1
+      },
+      "Team_9": {
+        "Critic": 7,
+        "Problem Solver": 6,
+        "Team Leader": 6,
+        "Coordinator": 3,
+        "Follower": 2,
+        "Task Motivator": 2,
+        "Attention Seeker": 1,
+        "Negative": 1
+      },
+      "Team_10": {
+        "Coordinator": 6,
+        "Attention Seeker": 3,
+        "Negative": 3,
+        "Problem Solver": 3,
+        "Task Completer": 3,
+        "Critic": 2,
+        "Team Leader": 2,
+        "Teamwork Support": 2,
+        "Evaluator": 1,
+        "Follower": 1,
+        "Power Seeker": 1,
+        "Social": 1
+      },
+      "Team_11": {
+        "Critic": 5,
+        "Negative": 5,
+        "Problem Solver": 4,
+        "Task Motivator": 4,
+        "Coordinator": 3,
+        "Attention Seeker": 1,
+        "Evaluator": 1,
+        "Team Leader": 1
+      },
+      "Team_12": {
+        "Coordinator": 12,
+        "Team Leader": 8,
+        "Problem Solver": 7,
+        "Critic": 6,
+        "Teamwork Support": 4,
+        "Negative": 3,
+        "Follower": 2,
+        "Task Motivator": 2,
+        "Evaluator": 1,
+        "Social": 1,
+        "Task Completer": 1
+      }
+    },
+    "dimension_means_overall": {
+      "Dominance_Average": 4.1857,
+      "Sociability_Average": 4.4188,
+      "Task_Orientation_Average": 4.4874
+    },
+    "dimension_means_by_role": {
+      "Problem Solver": {
+        "n": 62,
+        "Dominance_Average": 4.1635,
+        "Sociability_Average": 4.496,
+        "Task_Orientation_Average": 4.5367
+      },
+      "Coordinator": {
+        "n": 59,
+        "Dominance_Average": 4.5678,
+        "Sociability_Average": 4.7928,
+        "Task_Orientation_Average": 4.7655
+      },
+      "Critic": {
+        "n": 56,
+        "Dominance_Average": 3.9236,
+        "Sociability_Average": 4.0675,
+        "Task_Orientation_Average": 4.1637
+      },
+      "Negative": {
+        "n": 38,
+        "Dominance_Average": 3.0523,
+        "Sociability_Average": 3.6268,
+        "Task_Orientation_Average": 3.6323
+      },
+      "Task Motivator": {
+        "n": 32,
+        "Dominance_Average": 4.737,
+        "Sociability_Average": 4.5955,
+        "Task_Orientation_Average": 4.6319
+      },
+      "Team Leader": {
+        "n": 32,
+        "Dominance_Average": 4.8203,
+        "Sociability_Average": 4.7057,
+        "Task_Orientation_Average": 4.9271
+      },
+      "Evaluator": {
+        "n": 16,
+        "Dominance_Average": 4.5799,
+        "Sociability_Average": 4.5243,
+        "Task_Orientation_Average": 4.9444
+      },
+      "Attention Seeker": {
+        "n": 13,
+        "Dominance_Average": 4.3547,
+        "Sociability_Average": 4.6026,
+        "Task_Orientation_Average": 4.3162
+      },
+      "Task Completer": {
+        "n": 11,
+        "Dominance_Average": 4.0354,
+        "Sociability_Average": 4.3258,
+        "Task_Orientation_Average": 4.7929
+      },
+      "Teamwork Support": {
+        "n": 11,
+        "Dominance_Average": 3.7348,
+        "Sociability_Average": 4.6288,
+        "Task_Orientation_Average": 4.8359
+      },
+      "Follower": {
+        "n": 10,
+        "Dominance_Average": 3.5278,
+        "Sociability_Average": 4.6833,
+        "Task_Orientation_Average": 4.5722
+      },
+      "Power Seeker": {
+        "n": 7,
+        "Dominance_Average": 4.619,
+        "Sociability_Average": 4.0476,
+        "Task_Orientation_Average": 4.3889
+      },
+      "Social": {
+        "n": 5,
+        "Dominance_Average": 4.2444,
+        "Sociability_Average": 4.9556,
+        "Task_Orientation_Average": 4.4889
+      }
+    }
+  },
+  "team_development_stage": {
+    "note": "Counts from metadata meetings; comma-combined stages are split into parts",
+    "overall": {
+      "Performing": 24,
+      "Forming": 21,
+      "Norming": 18,
+      "Storming": 15,
+      "Adjourning": 11
+    },
+    "by_team": {
+      "Team_1": {
+        "Performing": 2,
+        "Norming": 1
+      },
+      "Team_2": {
+        "Forming": 5,
+        "Performing": 5,
+        "Adjourning": 1,
+        "Norming": 1,
+        "Storming": 1
+      },
+      "Team_3": {
+        "Storming": 3,
+        "Performing": 2,
+        "Adjourning": 1,
+        "Forming": 1,
+        "Norming": 1
+      },
+      "Team_4": {
+        "Adjourning": 1,
+        "Forming": 1,
+        "Norming": 1,
+        "Performing": 1,
+        "Storming": 1
+      },
+      "Team_5": {
+        "Performing": 4,
+        "Adjourning": 2,
+        "Forming": 2,
+        "Norming": 1,
+        "Storming": 1
+      },
+      "Team_6": {
+        "Storming": 2,
+        "Adjourning": 1,
+        "Forming": 1,
+        "Norming": 1,
+        "Performing": 1
+      },
+      "Team_7": {
+        "Adjourning": 1,
+        "Forming": 1,
+        "Norming": 1,
+        "Performing": 1,
+        "Storming": 1
+      },
+      "Team_8": {
+        "Adjourning": 1,
+        "Forming": 1,
+        "Norming": 1,
+        "Performing": 1,
+        "Storming": 1
+      },
+      "Team_9": {
+        "Forming": 2,
+        "Norming": 2,
+        "Adjourning": 1,
+        "Performing": 1,
+        "Storming": 1
+      },
+      "Team_10": {
+        "Forming": 3,
+        "Storming": 2,
+        "Norming": 1,
+        "Performing": 1
+      },
+      "Team_11": {
+        "Forming": 3,
+        "Adjourning": 1,
+        "Norming": 1,
+        "Performing": 1,
+        "Storming": 1
+      },
+      "Team_12": {
+        "Norming": 6,
+        "Performing": 4,
+        "Adjourning": 1,
+        "Forming": 1,
+        "Storming": 1
+      }
+    }
+  },
+  "language_groups": {
+    "ko_teams": {
+      "teams": [
+        "Team_1",
+        "Team_2",
+        "Team_3",
+        "Team_6",
+        "Team_7",
+        "Team_9",
+        "Team_10"
+      ],
+      "utterances": 55786,
+      "pct": 73.43
+    },
+    "en_teams": {
+      "teams": [
+        "Team_4",
+        "Team_5",
+        "Team_8",
+        "Team_11",
+        "Team_12"
+      ],
+      "utterances": 20185,
+      "pct": 26.57
+    }
+  },
+  "golden_utterance_type": {
+    "n_golden": 5705,
+    "overall": {
+      "Giving Information": {
+        "count": 1881,
+        "pct": 32.97
+      },
+      "Active listening": {
+        "count": 956,
+        "pct": 16.76
+      },
+      "Linking Solutions": {
+        "count": 395,
+        "pct": 6.92
+      },
+      "Other / Neutral": {
+        "count": 372,
+        "pct": 6.52
+      },
+      "Structuring": {
+        "count": 362,
+        "pct": 6.35
+      },
+      "Naming Solutions": {
+        "count": 339,
+        "pct": 5.94
+      },
+      "Social / Humor": {
+        "count": 296,
+        "pct": 5.19
+      },
+      "Proactivity": {
+        "count": 240,
+        "pct": 4.21
+      },
+      "Naming Problems": {
+        "count": 217,
+        "pct": 3.8
+      },
+      "Knowledge Transfer": {
+        "count": 171,
+        "pct": 3.0
+      },
+      "Cooperation": {
+        "count": 162,
+        "pct": 2.84
+      },
+      "Linking Problems": {
+        "count": 135,
+        "pct": 2.37
+      },
+      "Social Negative": {
+        "count": 66,
+        "pct": 1.16
+      },
+      "Task/Process Negative": {
+        "count": 62,
+        "pct": 1.09
+      },
+      "Linking & Connecting": {
+        "count": 51,
+        "pct": 0.89
+      }
+    },
+    "by_team": {
+      "Team_3": {
+        "Giving Information": {
+          "count": 94,
+          "pct_of_team_golden": 27.81
+        },
+        "Active listening": {
+          "count": 73,
+          "pct_of_team_golden": 21.6
+        },
+        "Other / Neutral": {
+          "count": 30,
+          "pct_of_team_golden": 8.88
+        },
+        "Structuring": {
+          "count": 30,
+          "pct_of_team_golden": 8.88
+        },
+        "Proactivity": {
+          "count": 20,
+          "pct_of_team_golden": 5.92
+        },
+        "Linking Solutions": {
+          "count": 18,
+          "pct_of_team_golden": 5.33
+        },
+        "Social Negative": {
+          "count": 14,
+          "pct_of_team_golden": 4.14
+        },
+        "Naming Problems": {
+          "count": 13,
+          "pct_of_team_golden": 3.85
+        },
+        "Social / Humor": {
+          "count": 12,
+          "pct_of_team_golden": 3.55
+        },
+        "Task/Process Negative": {
+          "count": 11,
+          "pct_of_team_golden": 3.25
+        },
+        "Cooperation": {
+          "count": 10,
+          "pct_of_team_golden": 2.96
+        },
+        "Linking Problems": {
+          "count": 7,
+          "pct_of_team_golden": 2.07
+        },
+        "Naming Solutions": {
+          "count": 5,
+          "pct_of_team_golden": 1.48
+        },
+        "Knowledge Transfer": {
+          "count": 1,
+          "pct_of_team_golden": 0.3
+        }
+      },
+      "Team_4": {
+        "Giving Information": {
+          "count": 224,
+          "pct_of_team_golden": 49.89
+        },
+        "Active listening": {
+          "count": 81,
+          "pct_of_team_golden": 18.04
+        },
+        "Naming Solutions": {
+          "count": 31,
+          "pct_of_team_golden": 6.9
+        },
+        "Structuring": {
+          "count": 20,
+          "pct_of_team_golden": 4.45
+        },
+        "Naming Problems": {
+          "count": 18,
+          "pct_of_team_golden": 4.01
+        },
+        "Linking Solutions": {
+          "count": 17,
+          "pct_of_team_golden": 3.79
+        },
+        "Other / Neutral": {
+          "count": 12,
+          "pct_of_team_golden": 2.67
+        },
+        "Social / Humor": {
+          "count": 11,
+          "pct_of_team_golden": 2.45
+        },
+        "Linking Problems": {
+          "count": 10,
+          "pct_of_team_golden": 2.23
+        },
+        "Cooperation": {
+          "count": 8,
+          "pct_of_team_golden": 1.78
+        },
+        "Knowledge Transfer": {
+          "count": 7,
+          "pct_of_team_golden": 1.56
+        },
+        "Linking & Connecting": {
+          "count": 5,
+          "pct_of_team_golden": 1.11
+        },
+        "Proactivity": {
+          "count": 4,
+          "pct_of_team_golden": 0.89
+        },
+        "Task/Process Negative": {
+          "count": 1,
+          "pct_of_team_golden": 0.22
+        }
+      },
+      "Team_5": {
+        "Active listening": {
+          "count": 84,
+          "pct_of_team_golden": 24.85
+        },
+        "Giving Information": {
+          "count": 75,
+          "pct_of_team_golden": 22.19
+        },
+        "Naming Solutions": {
+          "count": 43,
+          "pct_of_team_golden": 12.72
+        },
+        "Linking Solutions": {
+          "count": 40,
+          "pct_of_team_golden": 11.83
+        },
+        "Structuring": {
+          "count": 26,
+          "pct_of_team_golden": 7.69
+        },
+        "Proactivity": {
+          "count": 20,
+          "pct_of_team_golden": 5.92
+        },
+        "Cooperation": {
+          "count": 11,
+          "pct_of_team_golden": 3.25
+        },
+        "Other / Neutral": {
+          "count": 10,
+          "pct_of_team_golden": 2.96
+        },
+        "Naming Problems": {
+          "count": 9,
+          "pct_of_team_golden": 2.66
+        },
+        "Knowledge Transfer": {
+          "count": 6,
+          "pct_of_team_golden": 1.78
+        },
+        "Social / Humor": {
+          "count": 5,
+          "pct_of_team_golden": 1.48
+        },
+        "Linking & Connecting": {
+          "count": 3,
+          "pct_of_team_golden": 0.89
+        },
+        "Linking Problems": {
+          "count": 3,
+          "pct_of_team_golden": 0.89
+        },
+        "Task/Process Negative": {
+          "count": 3,
+          "pct_of_team_golden": 0.89
+        }
+      },
+      "Team_7": {
+        "Giving Information": {
+          "count": 610,
+          "pct_of_team_golden": 33.5
+        },
+        "Active listening": {
+          "count": 303,
+          "pct_of_team_golden": 16.64
+        },
+        "Other / Neutral": {
+          "count": 174,
+          "pct_of_team_golden": 9.56
+        },
+        "Structuring": {
+          "count": 134,
+          "pct_of_team_golden": 7.36
+        },
+        "Social / Humor": {
+          "count": 118,
+          "pct_of_team_golden": 6.48
+        },
+        "Naming Solutions": {
+          "count": 110,
+          "pct_of_team_golden": 6.04
+        },
+        "Linking Solutions": {
+          "count": 104,
+          "pct_of_team_golden": 5.71
+        },
+        "Proactivity": {
+          "count": 71,
+          "pct_of_team_golden": 3.9
+        },
+        "Naming Problems": {
+          "count": 68,
+          "pct_of_team_golden": 3.73
+        },
+        "Cooperation": {
+          "count": 47,
+          "pct_of_team_golden": 2.58
+        },
+        "Knowledge Transfer": {
+          "count": 29,
+          "pct_of_team_golden": 1.59
+        },
+        "Linking Problems": {
+          "count": 25,
+          "pct_of_team_golden": 1.37
+        },
+        "Linking & Connecting": {
+          "count": 16,
+          "pct_of_team_golden": 0.88
+        },
+        "Task/Process Negative": {
+          "count": 11,
+          "pct_of_team_golden": 0.6
+        },
+        "Social Negative": {
+          "count": 1,
+          "pct_of_team_golden": 0.05
+        }
+      },
+      "Team_8": {
+        "Giving Information": {
+          "count": 225,
+          "pct_of_team_golden": 41.98
+        },
+        "Active listening": {
+          "count": 105,
+          "pct_of_team_golden": 19.59
+        },
+        "Structuring": {
+          "count": 49,
+          "pct_of_team_golden": 9.14
+        },
+        "Knowledge Transfer": {
+          "count": 30,
+          "pct_of_team_golden": 5.6
+        },
+        "Proactivity": {
+          "count": 30,
+          "pct_of_team_golden": 5.6
+        },
+        "Social / Humor": {
+          "count": 22,
+          "pct_of_team_golden": 4.1
+        },
+        "Naming Solutions": {
+          "count": 20,
+          "pct_of_team_golden": 3.73
+        },
+        "Other / Neutral": {
+          "count": 19,
+          "pct_of_team_golden": 3.54
+        },
+        "Naming Problems": {
+          "count": 11,
+          "pct_of_team_golden": 2.05
+        },
+        "Cooperation": {
+          "count": 10,
+          "pct_of_team_golden": 1.87
+        },
+        "Linking Solutions": {
+          "count": 8,
+          "pct_of_team_golden": 1.49
+        },
+        "Task/Process Negative": {
+          "count": 3,
+          "pct_of_team_golden": 0.56
+        },
+        "Linking Problems": {
+          "count": 2,
+          "pct_of_team_golden": 0.37
+        },
+        "Social Negative": {
+          "count": 2,
+          "pct_of_team_golden": 0.37
+        }
+      },
+      "Team_9": {
+        "Giving Information": {
+          "count": 634,
+          "pct_of_team_golden": 29.18
+        },
+        "Active listening": {
+          "count": 301,
+          "pct_of_team_golden": 13.85
+        },
+        "Linking Solutions": {
+          "count": 207,
+          "pct_of_team_golden": 9.53
+        },
+        "Naming Solutions": {
+          "count": 129,
+          "pct_of_team_golden": 5.94
+        },
+        "Social / Humor": {
+          "count": 128,
+          "pct_of_team_golden": 5.89
+        },
+        "Other / Neutral": {
+          "count": 123,
+          "pct_of_team_golden": 5.66
+        },
+        "Knowledge Transfer": {
+          "count": 98,
+          "pct_of_team_golden": 4.51
+        },
+        "Naming Problems": {
+          "count": 98,
+          "pct_of_team_golden": 4.51
+        },
+        "Proactivity": {
+          "count": 92,
+          "pct_of_team_golden": 4.23
+        },
+        "Structuring": {
+          "count": 91,
+          "pct_of_team_golden": 4.19
+        },
+        "Linking Problems": {
+          "count": 88,
+          "pct_of_team_golden": 4.05
+        },
+        "Cooperation": {
+          "count": 75,
+          "pct_of_team_golden": 3.45
+        },
+        "Social Negative": {
+          "count": 49,
+          "pct_of_team_golden": 2.25
+        },
+        "Task/Process Negative": {
+          "count": 33,
+          "pct_of_team_golden": 1.52
+        },
+        "Linking & Connecting": {
+          "count": 27,
+          "pct_of_team_golden": 1.24
+        }
+      },
+      "Team_11": {
+        "Giving Information": {
+          "count": 19,
+          "pct_of_team_golden": 38.0
+        },
+        "Structuring": {
+          "count": 12,
+          "pct_of_team_golden": 24.0
+        },
+        "Active listening": {
+          "count": 9,
+          "pct_of_team_golden": 18.0
+        },
+        "Other / Neutral": {
+          "count": 4,
+          "pct_of_team_golden": 8.0
+        },
+        "Proactivity": {
+          "count": 3,
+          "pct_of_team_golden": 6.0
+        },
+        "Cooperation": {
+          "count": 1,
+          "pct_of_team_golden": 2.0
+        },
+        "Linking Solutions": {
+          "count": 1,
+          "pct_of_team_golden": 2.0
+        },
+        "Naming Solutions": {
+          "count": 1,
+          "pct_of_team_golden": 2.0
+        }
+      }
+    }
+  }
+}
